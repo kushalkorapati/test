@@ -1,0 +1,9 @@
+#!sh/bin/bash
+
+echo "please enter your user name"
+
+read USERNAME #THE VALUE ENTERD IN THE VARIABLE IS AUTOMATICALLY ATTACHED TO THE USER NAME 
+
+echo "please enter your password"
+
+read PASSWORD # THE VALE ENTERD IN THE VARIABLE IS AUTOMATICALLY ATTACHED TO THE PASSWORD
