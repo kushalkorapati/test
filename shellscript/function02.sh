@@ -4,7 +4,7 @@ TIMESTAMP=$(date +%F-%H-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 VALIDATE(){
-    if [ $? -e 0 ]
+    if [ $? -ne 0 ]
     then
         echo "ERROR :: installation failed"
         exit 1
@@ -13,7 +13,7 @@ VALIDATE(){
     fi
 }
 
-if [ ID -e 0 ]
+if [ ID -ne 0 ]
 then
     echo "you are a root user "
 else
