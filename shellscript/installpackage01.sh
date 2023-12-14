@@ -2,8 +2,12 @@
 
 ID=$(id -u)
 R='\033[0;31m'
-Green='\033[0;32m'
-White='\033[0;37m'
+G='\033[0;32m'
+W='\033[0;37m'
+TIMESTAMP=$(date  +%F-%H-%M-%S)
+LOGFILE="/tmp/$0-$TIMESTAMP.log"
+
+echo "script is exicuting $TIMESTAMP...." &>>$LOGFILE
 
 VALIDATE(){
     if [ $1 -ne 0 ]
