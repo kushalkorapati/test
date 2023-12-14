@@ -13,7 +13,7 @@ VALIDATE(){
     fi
 }
 
-if [ ID -ne 0 ]
+if [ ID -e 0 ]
 then
     echo "you are a root user "
 else
