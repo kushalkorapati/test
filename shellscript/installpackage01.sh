@@ -9,7 +9,7 @@ then
     echo "$R ERROR : You are not a root user $N"
     exit 1
 else
-    echo "you are a root user"
+    echo "$G you are a root user"
 fi
 
 echo "all the args passed $@"
