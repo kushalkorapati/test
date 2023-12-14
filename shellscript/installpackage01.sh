@@ -1,9 +1,9 @@
 #!/bin/bash
 
 ID=$(id -u)
-R="\e[31m"
-G="\e[32m"
-N="\e[0m"
+R='\033[0;31m'
+Green='\033[0;32m'
+White='\033[0;37m'
 
 VALIDATE(){
     if [ $1 -ne 0 ]
@@ -33,5 +33,7 @@ do
     then
         yum install $package -y
         VALIDATE $? "Installation of $package"
+    else
+        echo "$package is allready installed...skip "
     fi
 done
