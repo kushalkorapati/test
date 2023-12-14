@@ -4,7 +4,7 @@ TIMESTAMP=$(date +%F-%H-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 VALIDATE(){
-    if [ $? -ne 0 ]
+    if [ $? -e 0 ]
     then
         echo "ERROR :: installation failed"
         exit 1
