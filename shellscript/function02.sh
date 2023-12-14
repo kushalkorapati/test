@@ -1,7 +1,7 @@
 ID=$(id -u)
 
 TIMESTAMP=$(date +%F-%H-%M-%S)
-LOGFILE="tmp/$0-$TIMESTAMP.log"
+LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 VALIDATE(){
     if [ $? -ne 0 ]
@@ -22,4 +22,4 @@ else
 fi
 
 yum install mysql -y
-VALIDATE 
+VALIDATE  &>> LOGFILE
