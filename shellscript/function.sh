@@ -26,4 +26,4 @@ fi
 
  yum install git -y
  
- VALIDATE 
+ VALIDATE  "installing my sql"
