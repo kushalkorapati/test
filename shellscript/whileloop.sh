@@ -14,4 +14,4 @@ else
     echo -e "$G Source file found $N"
 fi
 
-FILES_TO_DELETE=find $SOURCE_FILE -type f -mtime +12 -name "*.log"
+FILES_TO_DELETE=$(find $SOURCE_FILE -type f -mtime +12 -name "*.log")
