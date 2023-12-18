@@ -9,7 +9,9 @@ N="\e[0m"
 
 if [ ! -d $SOURCE_FILE ]
 then
-    echo "$R Source directory : : $SOURCE_FILE file is not exists $N"
+    echo -e "$R Source directory : : $SOURCE_FILE file is not exists $N"
+else 
+    echo -e "$G Source file found"
 fi
 
 FILES_TO_DELETE=find $SOURCE_FILE -type f -mtime +12 -name "*.log"
