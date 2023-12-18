@@ -1,4 +1,4 @@
  #!/bin/bash
 
- File="/REPOS/assigements/rows-columns/file.txt"
+ File="/file.txt"
   echo "$File"
