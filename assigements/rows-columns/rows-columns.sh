@@ -1,4 +1,4 @@
  #!/bin/bash
 
- File="/file.txt"
+ File="rows-columns/file.txt/"
   echo "$File"
