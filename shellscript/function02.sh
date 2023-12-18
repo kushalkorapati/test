@@ -22,4 +22,4 @@ else
 fi
 
 yum install mysql -y
-VALIDATE  &>> LOGFILE
+VALIDATE $?  &>> LOGFILE
