@@ -1,5 +1,12 @@
 #!/bin/bash
 
-user="$1"
+# user="$1"
 
-useradd $user
+# useradd $user
+user=$@
+
+for j in $user
+do
+    useradd $j 
+    echo "hello $j user user name is created  by htis name $j"
+done
